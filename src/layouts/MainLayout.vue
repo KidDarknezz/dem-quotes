@@ -10,14 +10,9 @@
           aria-label="Menu"
           @click="leftDrawerOpen = !leftDrawerOpen"
         />
-        <q-avatar>
+        <q-avatar class="on-right" style="border-radius: 0; height: auto;">
           <img src="~assets/dem_logo.png">
         </q-avatar>
-
-        <q-toolbar-title>
-          Dem Quotes
-        </q-toolbar-title>
-
       </q-toolbar>
     </q-header>
 
@@ -70,12 +65,17 @@ export default {
         {
           title: 'Cotizaciones',
           icon: 'list_alt',
-          link: '/'
+          link: '#/quotes'
         },
         {
           title: 'Facturas',
           icon: 'receipt',
-          link: '/'
+          link: '#/invoices'
+        },
+        {
+          title: 'Cerrar Sesion',
+          icon: 'logout',
+          link: '#/login'
         }
       ]
     }

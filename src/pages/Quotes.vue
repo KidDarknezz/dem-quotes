@@ -8,6 +8,7 @@
 			</div>
 			<q-separator />
 			<div class="row q-mt-md">
+				<q-space />
 				<q-btn color="black" label="Crear" @click="dialog = true"/>
 			</div>
 			<div class="row q-mt-md">
