@@ -1,6 +1,6 @@
 <template>
   <q-layout view="lHh Lpr lFf">
-    <q-header elevated>
+    <q-header elevated v-if="$route.fullPath != '/login'">
       <q-toolbar class="bg-black text-white">
         <q-btn
           flat
@@ -21,6 +21,7 @@
       show-if-above
       bordered
       content-class="bg-grey-1"
+      v-if="$route.fullPath != '/login'"
     >
       <q-list>
         <q-item-label
